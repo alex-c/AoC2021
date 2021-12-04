@@ -1,0 +1,3 @@
+interface Quiz {
+    fun run()
+}
