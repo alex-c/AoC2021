@@ -4,7 +4,7 @@ import FileReader
 import Quiz
 
 class Quiz5 : Quiz {
-    override fun run() {
+    override fun run(verbose: Boolean) {
         val lines = FileReader.readLines("day03.txt")
         val length = Day03Utils.validateInput(lines)
 

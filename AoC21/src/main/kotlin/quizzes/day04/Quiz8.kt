@@ -3,7 +3,7 @@ package quizzes.day04
 import Quiz
 
 class Quiz8: Quiz {
-    override fun run() {
+    override fun run(verbose: Boolean) {
         val lines = FileReader.readLines("day04.txt")
         val game = BingoInputReader.read(lines)
 
@@ -12,6 +12,6 @@ class Quiz8: Quiz {
         while (winningBoards.size < numberOfBoards) {
             winningBoards.addAll(game.drawNext())
         }
-        println("Day 04 Quiz 08 score: ${winningBoards.last().getScore()}")
+        println("Day 04 Quiz 08 score:  ${winningBoards.last().getScore()}")
     }
 }

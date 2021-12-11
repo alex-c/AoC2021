@@ -3,7 +3,7 @@ package quizzes.day01
 import Quiz
 
 class Quiz2 : Quiz {
-    override fun run() {
+    override fun run(verbose: Boolean) {
         val lines = FileReader.readLines("day01.txt").map { it.toInt() }
         var count = 0
 

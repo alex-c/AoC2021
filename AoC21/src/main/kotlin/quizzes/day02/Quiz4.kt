@@ -4,7 +4,7 @@ import Quiz
 import quizzes.day02.Day02Utils.Companion.parseLine
 
 class Quiz4 : Quiz {
-    override fun run() {
+    override fun run(verbose: Boolean) {
         val lines = FileReader.readLines("day02.txt")
         var horizontalPos = 0
         var depth = 0

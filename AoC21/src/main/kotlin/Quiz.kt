@@ -1,3 +1,6 @@
 interface Quiz {
-    fun run()
+    fun run() {
+        run(false)
+    }
+    fun run(verbose: Boolean)
 }

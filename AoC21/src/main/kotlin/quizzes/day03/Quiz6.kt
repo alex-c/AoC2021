@@ -5,7 +5,7 @@ import Quiz
 import java.lang.Exception
 
 class Quiz6 : Quiz {
-    override fun run() {
+    override fun run(verbose: Boolean) {
         val lines = FileReader.readLines("day03.txt")
         val length = Day03Utils.validateInput(lines)
 
