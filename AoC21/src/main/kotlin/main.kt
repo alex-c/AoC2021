@@ -10,13 +10,15 @@ import quizzes.day05.Quiz10
 import quizzes.day05.Quiz9
 import quizzes.day06.Quiz11
 import quizzes.day06.Quiz12
+import quizzes.day07.Quiz13
+import quizzes.day07.Quiz14
 
 fun main(args: Array<String>) {
     val quizzesToRun = args[0]
     val verbose = args.size > 1 && args[1] == "-v"
     if (quizzesToRun == "all") {
         println("Running all quizzes...")
-        for (i in 1..11) {
+        for (i in 1..14) {
             getQuiz(i).run(verbose)
         }
     } else {
@@ -40,6 +42,8 @@ fun getQuiz(i: Int): Quiz {
         10 -> Quiz10()
         11 -> Quiz11()
         12 -> Quiz12()
+        13 -> Quiz13()
+        14 -> Quiz14()
         else -> throw Exception("Quiz number $i is not implemented yet.")
     }
 }
