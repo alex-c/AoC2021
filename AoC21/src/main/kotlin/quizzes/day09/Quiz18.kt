@@ -18,6 +18,6 @@ class Quiz18: Quiz {
         basinSizes.remove(top2)
         val top3 = basinSizes.maxOf { it }
 
-        println("Day 09 Quiz 17 result: ${top1 * top2 * top3}")
+        println("Day 09 Quiz 18 result: ${top1 * top2 * top3}")
     }
 }

@@ -14,6 +14,8 @@ import quizzes.day07.Quiz13
 import quizzes.day07.Quiz14
 import quizzes.day09.Quiz17
 import quizzes.day09.Quiz18
+import quizzes.day10.Quiz19
+import quizzes.day10.Quiz20
 
 fun main(args: Array<String>) {
     val quizzesToRun = args[0]
@@ -48,6 +50,8 @@ fun getQuiz(i: Int): Quiz {
         14 -> Quiz14()
         17 -> Quiz17()
         18 -> Quiz18()
+        19 -> Quiz19()
+        20 -> Quiz20()
         else -> throw Exception("Quiz number $i is not implemented yet.")
     }
 }
